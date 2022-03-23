@@ -25,9 +25,7 @@ html {
   justify-content: center;
   padding: 53px 0 106px;
 }
-.form {
-  
-}
+
 .input-group {
   display: flex;
   border: 1px solid rgba(128,128,128,0.5);
@@ -42,8 +40,12 @@ html {
 }
 .input-group-text {
   font-size: 22px;
+  font-weight: 500;
+  color: rgba(128,128,128,1);
 }
-
+input.password {
+  -webkit-text-security: square;
+}
 .select-group {
   display: block;
   position: relative;

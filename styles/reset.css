@@ -9,11 +9,9 @@
   padding: 0;
   margin: 0;
   }
-  /* html {
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%; 
-  } */
+ 
   body {
+    margin:0;
     box-sizing: border-box;
   }
   h1, h2, h3, h4, h5, h6, p, pre, blockquote, form, ul, ol, dl {

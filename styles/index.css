@@ -1,0 +1,201 @@
+html {
+  font-family: 'Inter', sans-serif;
+}
+.container {
+  background-image: url("../images/Artboard.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: content-box;
+}
+.login {
+  padding: 114px 876px 116px 62px;
+}
+.login-container {
+  width: 502px;
+  height: 794px;
+  padding: 0 32px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 30px 0px 78px rgba(0,0,0,0.15);
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 53px 0 106px;
+}
+.form {
+  
+}
+.input-group {
+  display: flex;
+  border: 1px solid rgba(128,128,128,0.5);
+  margin-bottom: 14px;
+  border-radius: 5px;
+}
+
+.input-group-icon {
+  padding:18px 20px;
+  font-size: 22px;
+  color: rgba(9,28,163,1);
+}
+.input-group-text {
+  font-size: 22px;
+}
+
+.select-group {
+  display: block;
+  position: relative;
+  line-height: 1.5;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.select-group input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.select-group .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.select-group input:checked ~ .checkmark {
+  background-color: rgba(9,28,163,1);
+}
+.select-group input:checked ~.checkmark::after {
+  display: block;
+}
+.form-forget a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 27px 0 50px;
+}
+.form-forget a:visited {
+  color: rgba(9,28,163,1);
+}
+.input-group-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-hide {
+  cursor: pointer;
+}
+.input-group-text {
+  border-radius: 5px;
+  border: none;
+  flex:1;
+}
+.form-button {
+  display: flex;
+  flex-direction: column;
+}
+.form-button button {
+  display: inline-block;
+  padding: 19px 28px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.button-login {
+  color: #ffffff;
+  background: rgba(9,28,163,1);
+}
+.button-singup {
+  color: rgba(128,128,128,1);
+  border: 1px solid rgba(128,128,128,0.5);
+  background-color: #ffffff;
+}
+
+@media only screen and (max-width:1470px) {
+  .login {
+    padding: 114px 62px;
+  }
+}
+@media only screen and (max-width:767px) {
+  .login {
+    padding: 114px 62px;
+  }
+  .login-container {
+    width: 340px;
+    height: 680px;
+  }
+  .input-group-text {
+    width: 200px;
+  }
+  .form-button button {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width:520px) {
+  .container {
+    height: 100vh;
+  }
+  .login {
+    padding: 50px 20px;
+  }
+  .logo {
+    padding: 50px 0;
+  }
+  .login-container {
+    margin: 0 auto;
+    width: 300px;
+    height: 620px;
+  }
+  .input-group-icon{
+    padding: 10px 20px;
+  }
+  .input-group-text {
+    width: 100px;
+  }
+  
+}
+@media only screen and (max-width:400px) {
+ 
+  .login {
+    padding: 40px 10px;
+  }
+  .login-container {
+    width: 250px;
+    padding: 15px;
+    height: 550px;
+  }
+  .input-group-text {
+    width: 80px;
+  }
+  .form-button button {
+    padding: 10px 5px;
+    font-size: 12px;
+  }
+}
